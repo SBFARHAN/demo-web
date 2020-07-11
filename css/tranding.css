@@ -212,15 +212,6 @@
     position: relative;
     /* background-color: #2f2f2f; */
 }
-.allSmallCard .popular_products h2::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 40%;
-    height: 3px;
-    background-color: #24adec;
-}
 .allSmallCard .products_card{
     width: 23rem;
     height: 28rem;
