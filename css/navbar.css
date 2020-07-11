@@ -1,0 +1,154 @@
+nav{
+    width: 100%;
+    height: 8rem;
+    background-color: #067fb7;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.area_nav{
+    max-width: 1080px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    margin: auto;
+}
+/* ! Navbar Global Style End */
+.logo_div a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 2.5rem;
+}
+
+.logo_div a img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.logo_div span{
+    color: #f0f0f0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+/* ! Navbar Logo Style End */
+
+.ul_class{
+    list-style: none;
+    display: flex;
+}
+
+.ul_class li{
+    margin: 0 1rem 0 0;
+}
+
+.ul_class a{
+    text-decoration: none;
+    color: #f6f6f6;
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+    outline: none;
+}
+
+.ul_class a:hover{
+    color: #ffffff;
+    background-color: #009de6;
+}
+
+.ul_class .active_link{
+    color: #ffffff;
+    background-color: #009de6;
+    outline: none;
+}
+
+/* ! Menu Page Link Style End */
+
+.toggle_menu{
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin: 0 1.5rem 0 0;
+    display: none;
+}
+
+.toggle_menu div{
+    width: 3rem;
+    height: 0.3rem;
+    background-color: #ffffff;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+    transition: all 0.5s ease;
+}
+
+/* ! Toggle Menu End */
+
+@media screen and (max-width: 940px){
+
+    .toggle_menu{
+        display: block;
+    }
+
+    .ul_class{
+        position: absolute;
+        right:  0;
+        top: 8rem;
+        flex-direction: column;
+        background-color: #067fb7;
+        width: 100%;
+        transform: translateX(100%);
+        transition: all 0.6s ease-in;
+        display: none;
+        z-index: 1000;
+    }
+
+    .ul_class li{
+        margin: 0.5rem 0;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .ul_class li:first-child{
+        margin: 0 0 0.5rem 0;
+    }
+
+    .ul_class li:last-child{
+        margin: 0.5rem 0 1rem 0;
+    }
+
+    .ul_class li a{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+   .ul_return{
+    position: absolute;
+    right:  0;
+    top: 8rem;
+    display: block;
+    transform: translateX(0%);
+    z-index: 1000;
+   }
+
+   .ul_return li{
+        opacity: 1;
+   }
+
+   .cross_nav .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+   }
+   .cross_nav .line2{
+        opacity: 0;
+   }
+   .cross_nav .line3{
+        transform: rotate(45deg )translate(-5px,-6px);
+   }
+   
+}

@@ -1,0 +1,144 @@
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #212121;
+    color: #ececee;
+}
+
+.all_footer{
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.footer_description{
+    max-width: 30rem;
+    /* background-color: lightslategrey; */
+    padding: 0 1.5rem;
+}
+
+.link_sec{
+    width: 30rem;
+    /* background-color: lightsteelblue; */
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    margin: 0 2rem;
+}
+
+.link_sec li{
+    list-style: none;
+    border-bottom: 1px solid #ececee;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.link_sec li a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #ececee;
+    text-transform: capitalize;
+}
+
+.follow_sec{
+    max-width: 30rem;
+    /* background-color: mediumaquamarine; */
+    padding: 0 1.5rem;
+}
+
+.social_icon{
+    text-align: center;
+    margin: 3rem 0 2rem 0;
+}
+
+.social_icon a{
+    font-size: 2.5rem;
+    color: #ececee;
+    padding: 0.7rem 1rem;
+    background-color: #009de6;
+    border-radius: 0.5rem;
+    margin: 0 0.5rem 0 0;
+}
+
+.social_icon a:first-child{
+    padding: 0.7rem 1.3rem;
+}
+
+.social_icon a:hover{
+    color: #ffffff;
+}
+
+.footer_description h2,
+.link_sec h2,
+.follow_sec h2{
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    margin: 1.5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer_description p,
+.follow_sec p{
+    color: #c5c5c5;
+    font-size: 1.8rem;
+    text-align: justify;
+    text-transform: capitalize;
+    margin: 2rem 0 0 0;
+}
+
+.copyright{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #484848;
+}
+
+.copyright p{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ft_years{
+    font-size: 2.2rem;
+}
+
+@media screen and (max-width: 950px){
+
+    .footer_description p,
+    .follow_sec p{
+        font-size: 1.6rem;
+    }
+
+    .link_sec li a{
+        font-size: 1.8rem;
+    }
+
+    .social_icon a{
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width: 715px){
+
+    .all_footer{
+        flex-direction: column;
+    }
+
+    .link_sec,
+    .footer_description,
+    .follow_sec{
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 395px){
+
+    .footer_description p{
+        font-size: 1.5rem;
+    }
+
+}
