@@ -184,8 +184,9 @@
     background-color: inherit;
     /* border: 1px solid #000000; */
     font-family: 'Lato', sans-serif;
-    padding: 2rem 0;
+    padding: 2rem 4rem;
     margin: 0 auto;
+    background-color: aquamarine;
 }
 .allSmallCard .container_smallCard{
     width: 100%;
@@ -211,15 +212,6 @@
     grid-column-end: 4;
     position: relative;
     /* background-color: #2f2f2f; */
-}
-.allSmallCard .popular_products h2::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 40%;
-    height: 3px;
-    background-color: #24adec;
 }
 .allSmallCard .products_card{
     width: 23rem;
@@ -597,6 +589,16 @@
         font-size: 2rem;
     }
     /* ! Product Card Slider End */
+    /*! Small Card Style Design Start */
+    .allSmallCard .popular_products h2,
+    .allSmallCard .featured_products h2,
+    .allSmallCard .bestSell_products h2
+    {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    /*! Small Card Style Design End */
 }
 
 @media screen and (max-width: 365px){
