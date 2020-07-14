@@ -6,7 +6,8 @@ toggle.addEventListener("click", function () {
 });
 //! More Sub menu Enable Disable
 const more_li = document.querySelector(".more_li");
-more_li.addEventListener("click", function () {
+more_li.addEventListener("click", function (e) {
+    e.preventDefault();
     const sub_menu = document.querySelector(".sub_menu");
     sub_menu.classList.toggle("active_subMenu");
 });
