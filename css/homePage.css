@@ -1,0 +1,210 @@
+/* !  --__--__Trending Section Start__---__--__--*/
+/* ? Trending Title Part // First Two Part Stat*/
+.trending_sec{
+    margin: 2rem 0;
+}
+.trending_sec .trending_container .sec_one{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+}
+.trending_sec .title_post img{
+    width: 100%;
+    height: 40rem;
+}
+.trending_sec .trending_container .sec_one .title_link .link_title{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top: 1px dotted #000000;
+    border-bottom: 1px dotted #000000;
+    padding: 0.7rem 0;
+}
+.trending_sec .trending_container .sec_one .title_link .link_title .title_star{
+    color: #ffffff;
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 1.5rem 0 0;
+    background-color: #2f6e91;
+}
+.trending_sec .trending_container .sec_one .title_link .link_title a{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+} 
+.trending_sec .trending_container .sec_one .title_post .header_link{
+    text-decoration: none;
+    color: #000000;
+    font-size: 2.2rem;
+    font-weight: 700;
+    display: block;
+    padding: 1rem 1rem;
+    background-color: #e2e2e2;
+    margin-top: -5px;
+}
+.trending_sec .trending_container .sec_one .title_post:hover .header_link{
+    color: #10608f;
+}
+.trending_sec .trending_container .sec_one .title_link a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.7rem;
+    display: block;
+    font-weight: 700;
+    padding: 1rem 0  1rem 0;
+    border-bottom: 1px dotted #000000;
+}
+.trending_sec .trending_container .sec_one a:hover{
+    color: #10608f;
+}
+/* ? Trending Title Card  Section Start//  First  Five Card*/
+.trending_sec .trending_container .sec_two .title_cardSec{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.trending_sec .trending_container .sec_two{
+    margin: 2rem 0;
+}
+.trending_sec .trending_container .sec_two .title_cardSec img{
+    width: 100%;
+    height: 22rem;
+}
+.trending_sec .trending_container .sec_two .title_cardSec .link_a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.7rem;
+    display: block;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    background-color: #e2e2e2;
+    margin-top: -5px;
+}
+.trending_sec .trending_container .sec_two .title_cardSec .link_a:hover{
+    color: #10608f;
+}
+.trending_sec .trending_container .sec_two .title_cardSec div:hover .link_a{
+    color: #10608f;
+}
+/* !  --__--__Trending Section End__---__--__--*/
+
+
+
+
+
+
+
+
+
+
+
+/* !------- Media Screen Responsive Style */
+@media screen and (max-width: 860px){
+    /* ? Trending Section  Sec One Start*/
+    .trending_sec .trending_container .sec_one{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+    /* ? Trending Section  Sec Two Start*/
+    .trending_sec .trending_container .sec_two .title_cardSec{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+
+}
+@media screen and (max-width: 800px){
+    /* ? Trending Section  Sec One Start*/
+    .trending_sec .trending_container .sec_two .title_smallCard{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+    .trending_sec .trending_container .sec_two .title_smallCard div{
+        display: flex;
+    }
+    .trending_sec .trending_container .sec_two .title_smallCard img{
+        width: 30%;
+        height: auto;
+    }
+    .trending_sec .trending_container .sec_two .title_smallCard a{
+        margin: 0
+    };
+
+}
+@media screen and (max-width: 660px){
+    /* ? Trending Section  Sec One Start*/
+    .trending_sec .title_post img{
+        height: 30rem;
+    }
+}
+@media screen and (max-width: 640px){
+    /* ? Trending Section  Sec One Start*/
+    .trending_sec .title_post img{
+        height: 23rem;
+    }
+    /* ? Trending Section  Sec Two Start*/
+    .trending_sec .trending_container .sec_two .title_cardSec{
+        grid-template-columns: minmax(320px, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .trending_sec .trending_container .sec_two .title_cardSec div{
+        display: flex;
+    }
+    .trending_sec .trending_container .sec_two .title_cardSec .image_link{
+        width: 22rem;
+        height: auto;
+    }
+    .trending_sec .trending_container .sec_two .title_cardSec img{
+        width: 100%;
+        height: 100%;
+    }
+    .trending_sec .trending_container .sec_two .title_cardSec .link_a{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 530px){
+    /* .trending_sec .trending_container .sec_two .title_cardSec .image_link{
+        width: 35%;
+        height: 10rem;
+    } */
+    .trending_sec .trending_container .sec_one .title_post .header_link{
+        font-size: 1.7rem;
+    }
+
+}
+@media screen and (max-width: 420px){
+    .trending_sec .title_post img{
+        height: 18rem;           
+    }
+    .trending_sec .trending_container .sec_two .title_cardSec .image_link{
+        width: 22rem;
+        height: auto;
+    }
+    .trending_sec .trending_container .sec_two .title_cardSec .link_a{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 420px){
+
+    .trending_sec .title_post img{
+        height: 16rem;           
+    }
+    .trending_sec .trending_container .sec_one .title_post .header_link{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 356px){
+    .trending_sec .trending_container .sec_two .title_cardSec .link_a{
+        font-size: 1.4rem;
+        display: inline-block;
+    }
+}
