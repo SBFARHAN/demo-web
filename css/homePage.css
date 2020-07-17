@@ -8,6 +8,7 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 2rem;
+    padding: 0 2rem;
 }
 .trending_sec .title_post img{
     width: 100%;
@@ -66,6 +67,9 @@
     color: #10608f;
 }
 /* ? Trending Title Card  Section Start//  First  Five Card*/
+.trending_sec .trending_container .sec_two{
+    padding: 0 2rem;
+}
 .trending_sec .trending_container .sec_two .title_cardSec{
     display: grid;
     grid-gap: 2rem;
@@ -95,7 +99,96 @@
 .trending_sec .trending_container .sec_two .title_cardSec div:hover .link_a{
     color: #10608f;
 }
-/* !  --__--__Trending Section End__---__--__--*/
+/* !  --__--__ Trending Section End __---__--__--*/
+/* !  --__--__ Tech News Section Start __---__--__--*/
+.tech_section .tech_container .title_bar{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin: 4rem 0 2rem 0;
+    text-align: center;
+}
+.tech_section .tech_container .title_bar h2{
+    font-size: 1.8rem;
+    padding: 0.8rem 0 0.8rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.tech_section .tech_container .highlight_card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    padding: 0 2rem;
+    margin: 0 0 2rem 0;
+}
+.tech_section .tech_container .highlight_card a{
+    color: #000000;
+    text-decoration: none;
+}
+.tech_section .tech_container .highlight_card .img_link img{
+    width: 100%;
+    height: 32rem;
+}
+.tech_section .tech_container .highlight_card div:hover .title_link{
+    color: #10608f;
+}
+.tech_section .tech_container .small_card div:hover .title_link{
+    color: #10608f;
+}
+.tech_section .tech_container .highlight_card .title_link{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+}
+.tech_section .tech_container .highlight_card .pera_link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+.tech_section .tech_container .small_card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 0 2rem;
+    margin: 0 0 2rem 0;
+}
+.tech_section .tech_container .small_card a{
+    text-decoration: none;
+    color: #000000;
+}
+.tech_section .tech_container .small_card .img_link img{
+    width: 100%;
+    height: auto;
+}
+.tech_section .tech_container .small_card .title_link{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+    margin: 1rem 0 1rem 0;
+}
+.tech_section .tech_container .small_card .pera_link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+
+
+
+
+/* !  --__--__ Tech News Section End __---__--__--*/
+
+
+
+
+
+
 
 
 
@@ -172,16 +265,14 @@
     }
 }
 @media screen and (max-width: 530px){
-    /* .trending_sec .trending_container .sec_two .title_cardSec .image_link{
-        width: 35%;
-        height: 10rem;
-    } */
+    /* ? Trending Section Start*/
     .trending_sec .trending_container .sec_one .title_post .header_link{
         font-size: 1.7rem;
     }
 
 }
 @media screen and (max-width: 420px){
+    /* ? Trending Section Start*/
     .trending_sec .title_post img{
         height: 18rem;           
     }
@@ -194,7 +285,7 @@
     }
 }
 @media screen and (max-width: 420px){
-
+    /* ? Trending Section Start*/
     .trending_sec .title_post img{
         height: 16rem;           
     }
@@ -203,6 +294,7 @@
     }
 }
 @media screen and (max-width: 356px){
+    /* ? Trending Section Start*/
     .trending_sec .trending_container .sec_two .title_cardSec .link_a{
         font-size: 1.4rem;
         display: inline-block;
