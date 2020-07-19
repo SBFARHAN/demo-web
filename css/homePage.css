@@ -44,8 +44,8 @@
 .trending_sec .trending_container .sec_one .title_post .header_link{
     text-decoration: none;
     color: #000000;
-    font-size: 2.2rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 600;
     display: block;
     padding: 1rem 1rem;
     background-color: #e2e2e2;
@@ -59,7 +59,7 @@
     color: #000000;
     font-size: 1.7rem;
     display: block;
-    font-weight: 700;
+    font-weight: 600;
     padding: 1rem 0  1rem 0;
     border-bottom: 1px dotted #000000;
 }
@@ -88,7 +88,7 @@
     color: #000000;
     font-size: 1.7rem;
     display: block;
-    font-weight: 700;
+    font-weight: 600;
     padding: 0.5rem 1rem;
     background-color: #e2e2e2;
     margin-top: -5px;
@@ -100,14 +100,167 @@
     color: #10608f;
 }
 /* !  --__--__ Trending Section End __---__--__--*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* !  --__--__ sports Section Start __---__--__--*/
+.sports_section .sports_container .title_bar .sp_icon{
+    color: #1195dd;
+    font-size: 2.4rem;
+    margin: 0 0.8rem 0 0;
+}    
+.sports_section .sports_container .title_bar{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin: 4rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sports_section .sports_container .title_bar h2{
+    font-size: 1.8rem;
+    padding: 0.8rem 0 0.8rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.sports_section .sports_container .highlight_card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    padding: 0 2rem;
+    margin: 0 0 2rem 0;
+}
+.sports_section .sports_container .highlight_card div{
+    position: relative;
+}
+.sports_section .sports_container .small_card div{
+    position: relative;
+}
+.sports_section .sports_container .highlight_card .small_title{
+    background-color: #10608f;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sports_section .sports_container .small_card .small_title{
+    background-color: #10608f;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sports_section .sports_container .highlight_card .img_link img{
+    width: 100%;
+    height: 32rem;
+}
+.sports_section .sports_container .highlight_card .title_link{
+    color: #000000;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+    margin: 1rem 0 1rem 0;
+}
+.sports_section .sports_container .highlight_card .pera_link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+.sports_section .sports_container .highlight_card div:hover .title_link{
+    color: #10608f;
+}
+.sports_section .sports_container .small_card div:hover .title_link{
+    color: #10608f;
+}
+.sports_section .sports_container .small_card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 0 2rem;
+    margin: 0 0 2rem 0;
+}
+.sports_section .sports_container .small_card .img_link img{
+    width: 100%;
+    height: 22rem;
+}
+.sports_section .sports_container .small_card .title_link{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+    margin: 1rem 0 1rem 0;
+}
+.sports_section .sports_container .small_card .pera_link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+/* !  --__--__ sports Section End __---__--__--*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* !  --__--__ Tech News Section Start __---__--__--*/
+.tech_section .tech_container .title_bar .tc_icon{
+    color: #1195dd;
+    font-size: 2.4rem;
+    margin: 0 0.8rem 0 0;
+}
 .tech_section .tech_container .title_bar{
     width: 100%;
     height: auto;
     border-top: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
     margin: 4rem 0 2rem 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .tech_section .tech_container .title_bar h2{
     font-size: 1.8rem;
@@ -163,7 +316,7 @@
 }
 .tech_section .tech_container .small_card .img_link img{
     width: 100%;
-    height: auto;
+    height: 22rem;
 }
 .tech_section .tech_container .small_card .title_link{
     font-size: 1.7rem;
@@ -178,14 +331,198 @@
     font-weight: 400;
     color: #1d1d1d;
 }
-
-
-
-
 /* !  --__--__ Tech News Section End __---__--__--*/
 
 
 
+
+
+
+
+
+
+
+
+/* !  --__--__ Health Section Start __---__--__--*/
+.body_container .health .health_title{
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin: 0  0 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body_container .health .health_title .ht_con{
+    color: #1195dd;
+    font-size: 1.8rem;
+    margin: 0 1rem 0 0;
+}
+.body_container .health .health_title h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+}
+.body_container .health .m_Health_pic{
+    position: relative;
+    margin: 0 2rem 2rem 2rem;
+}
+.body_container .health .m_Health_pic .img_title{
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    background-color: #00000082;
+}
+.body_container .health .m_Health_pic .img_title h2{
+    color: #ececec;
+}
+.body_container .health .m_Health_pic img{
+    width: 100%;
+    height: 50rem;
+    position: relative;
+}
+.body_container .health .review_card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 0 2rem;
+    margin:  0 0 2rem 0;
+}
+.body_container .health .review_card img{
+    width: 100%;
+    height: 22rem;
+}
+.body_container .health .review_card .title_link{
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+}
+.body_container .health .review_card .pera_link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+.body_container .health .review_card div:hover .title_link{
+    color: #10608f;
+}
+.body_container .health .review_card .fullSar{
+    color: #FACA67;
+}
+.body_container .health .review_card .halfSar{
+    color: #FACA67;
+}
+.body_container .health .review_card .noneStar{
+    color: #adadad;
+}
+/* !  --__--__ Health Section End __---__--__--*/
+
+
+
+
+
+
+
+
+
+
+/* !  --__--__ jewelry Section Start __---__--__--*/
+.body_container .jewelry .jewelry_title{
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin: 0  0 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body_container .jewelry .jewelry_title .jl_con{
+    color: #1195dd;
+    font-size: 1.8rem;
+    margin: 0 1rem 0 0;
+}
+.body_container .jewelry .m_jewelry_pic img{
+    width: 100%;
+    height: 50rem;
+    position: relative;
+}
+.body_container .jewelry .m_jewelry_pic .img_title{
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    background-color: #00000082;
+}
+.body_container .jewelry .m_jewelry_pic .img_title h2{
+    color: #ececec;
+}
+.body_container .jewelry .jewelry_title h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+}
+.body_container .jewelry .m_jewelry_pic{
+    position: relative;
+    margin: 0 2rem 2rem 2rem;
+}
+.body_container .jewelry .review_card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 0 2rem;
+    margin:  0 0 2rem 0;
+}
+.body_container .jewelry .review_card .pera_link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+.body_container .jewelry .review_card img{
+    width: 100%;
+    height: 22rem;
+}
+.body_container .jewelry .review_card .title_link{
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+}
+.body_container .jewelry .review_card div:hover .title_link{
+    color: #10608f;
+}
+.body_container .jewelry .review_card .fullSar{
+    color: #FACA67;
+}
+.body_container .jewelry .review_card .halfSar{
+    color: #FACA67;
+}
+.body_container .jewelry .review_card .noneStar{
+    color: #adadad;
+}
+/* !  --__--__ jewelry Section End __---__--__--*/
 
 
 

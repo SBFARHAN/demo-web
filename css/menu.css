@@ -282,11 +282,11 @@ header .nav .search_box .search_ic{
     }
     header .nav .menu_container .menu_sec ul li a{
         text-align: start;
-        padding: 0 0 0 1rem;
+        padding: 0 0 0 3rem;
     }
     header .nav .menu_sec ul li .sub_menu li a{
         text-align: start;
         display: block;
-        padding: 0 0 0 3rem;
+        padding: 0 0 0 5rem;
     }
 }
