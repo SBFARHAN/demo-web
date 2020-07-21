@@ -243,6 +243,163 @@
 
 
 
+/* !  --__--__ pets Section Start __---__--__--*/
+.pets_section .pets_container .title_bar .pt_icon{
+    color: #1195dd;
+    font-size: 2.4rem;
+    margin: 0 0.8rem 0 0;
+}
+.pets_section .pets_container .title_bar{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin: 4rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pets_section .pets_container .title_bar h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+}
+.pets_section .pets_container .highlight_card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    padding: 0 2rem;
+    margin: 0 0 2rem 0;
+}
+.pets_section .pets_container .highlight_card > div{
+    position: relative;
+}
+.pets_section .pets_container .highlight_card .img_link img{
+    width: 100%;
+    height: 32rem;
+}
+.pets_section .pets_container ,.highlight_card .title_link{
+    color: #000000;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+    margin: 1rem 0 0 0;
+}
+.pets_section .pets_container .highlight_card .pera_link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+.pets_section .pets_container .highlight_card .star_title .little_title{
+    font-size: 2rem;
+    font-weight: 400;
+    background-color: #10608f;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pets_section .pets_container .highlight_card .star_title{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0.5rem 0;
+}
+.pets_section .pets_container .highlight_card .star_title .star .fa-star{
+    font-size: 1.6rem;
+}
+.body_container .pets_container .highlight_card .star .fullSar{
+    color: #FACA67;
+}
+.body_container .pets_container .highlight_card .star .halfSar{
+    color: #FACA67;
+}
+.body_container .pets_container .highlight_card .star .noneStar{
+    color: #adadad;
+}
+.pets_section .pets_container .small_card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 0 2rem;
+    margin: 0 0 2rem 0;
+}
+.pets_section .pets_container .small_card .img_link img{
+    width: 100%;
+    height: 22rem;
+}
+.pets_section .pets_container .small_card .title_link{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+    margin: 1rem 0 0;
+}
+.pets_section .pets_container .small_card .pera_link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+.pets_section .pets_container .small_card > div{
+    position: relative;
+}
+.pets_section .pets_container .small_card .star_title .little_title{
+    font-size: 1.7rem;
+    font-weight: 400;
+    background-color: #10608f;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pets_section .pets_container .small_card .star_title{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0.5rem 0;
+}
+.pets_section .pets_container .small_card .star_title .star .fa-star{
+    font-size: 1.6rem;
+}
+.body_container .pets_container .small_card .star .fullSar{
+    color: #FACA67;
+}
+.body_container .pets_container .small_card .star .halfSar{
+    color: #FACA67;
+}
+.body_container .pets_container .small_card .star .noneStar{
+    color: #adadad;
+}
+/* !  --__--__ pets Section End __---__--__--*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -296,6 +453,7 @@
     font-weight: 600;
     width: 100%;
     display: inline-block;
+    margin: 1rem 0 1rem 0;
 }
 .tech_section .tech_container .highlight_card .pera_link{
     font-size: 1.6rem;
@@ -386,7 +544,7 @@
 }
 .body_container .health .m_Health_pic img{
     width: 100%;
-    height: 50rem;
+    height: 55rem;
     position: relative;
 }
 .body_container .health .review_card{
@@ -455,8 +613,9 @@
 }
 .body_container .jewelry .m_jewelry_pic img{
     width: 100%;
-    height: 50rem;
+    height: 55rem;
     position: relative;
+    display: block;
 }
 .body_container .jewelry .m_jewelry_pic .img_title{
     position: absolute;
@@ -471,6 +630,8 @@
     background-color: #00000082;
 }
 .body_container .jewelry .m_jewelry_pic .img_title h2{
+    font-size: 2rem;
+    font-weight: 600;
     color: #ececec;
 }
 .body_container .jewelry .jewelry_title h2{
@@ -538,102 +699,88 @@
 
 
 /* !------- Media Screen Responsive Style */
-@media screen and (max-width: 860px){
-    /* ? Trending Section  Sec One Start*/
-    .trending_sec .trending_container .sec_one{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto;
-    }
-    /* ? Trending Section  Sec Two Start*/
-    .trending_sec .trending_container .sec_two .title_cardSec{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
+@media screen and (max-width: 880px){
 
-
-}
-@media screen and (max-width: 800px){
-    /* ? Trending Section  Sec One Start*/
-    .trending_sec .trending_container .sec_two .title_smallCard{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
+    
+    /* !  --__--__ jewelry Section Start __---__--__--*/
+    .body_container .jewelry .review_card{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
     }
-    .trending_sec .trending_container .sec_two .title_smallCard div{
-        display: flex;
+    .body_container .jewelry .m_jewelry_pic img{
+        height: 40rem;
     }
-    .trending_sec .trending_container .sec_two .title_smallCard img{
-        width: 30%;
-        height: auto;
-    }
-    .trending_sec .trending_container .sec_two .title_smallCard a{
-        margin: 0
-    };
-
-}
-@media screen and (max-width: 660px){
-    /* ? Trending Section  Sec One Start*/
-    .trending_sec .title_post img{
-        height: 30rem;
-    }
-}
-@media screen and (max-width: 640px){
-    /* ? Trending Section  Sec One Start*/
-    .trending_sec .title_post img{
-        height: 23rem;
-    }
-    /* ? Trending Section  Sec Two Start*/
-    .trending_sec .trending_container .sec_two .title_cardSec{
-        grid-template-columns: minmax(320px, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-    }
-    .trending_sec .trending_container .sec_two .title_cardSec div{
-        display: flex;
-    }
-    .trending_sec .trending_container .sec_two .title_cardSec .image_link{
-        width: 22rem;
-        height: auto;
-    }
-    .trending_sec .trending_container .sec_two .title_cardSec img{
-        width: 100%;
-        height: 100%;
-    }
-    .trending_sec .trending_container .sec_two .title_cardSec .link_a{
-        margin: 0;
-    }
-}
-@media screen and (max-width: 530px){
-    /* ? Trending Section Start*/
-    .trending_sec .trending_container .sec_one .title_post .header_link{
-        font-size: 1.7rem;
-    }
-
-}
-@media screen and (max-width: 420px){
-    /* ? Trending Section Start*/
-    .trending_sec .title_post img{
-        height: 18rem;           
-    }
-    .trending_sec .trending_container .sec_two .title_cardSec .image_link{
-        width: 22rem;
-        height: auto;
-    }
-    .trending_sec .trending_container .sec_two .title_cardSec .link_a{
-        font-size: 1.5rem;
-    }
-}
-@media screen and (max-width: 420px){
-    /* ? Trending Section Start*/
-    .trending_sec .title_post img{
-        height: 16rem;           
-    }
-    .trending_sec .trending_container .sec_one .title_post .header_link{
+    .body_container .jewelry .m_jewelry_pic .img_title h2{
         font-size: 1.6rem;
     }
+    .body_container .jewelry .m_jewelry_pic .img_title{
+        padding: 1rem 1rem;
+    }
+    /* !  --__--__ jewelry Section End __---__--__--*/
+
+
 }
-@media screen and (max-width: 356px){
-    /* ? Trending Section Start*/
-    .trending_sec .trending_container .sec_two .title_cardSec .link_a{
-        font-size: 1.4rem;
-        display: inline-block;
+
+
+
+
+
+
+@media screen and (max-width: 630px){
+
+     /* !  --__--__ jewelry Section Start __---__--__--*/
+    .body_container .jewelry .review_card{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .body_container .jewelry .m_jewelry_pic img{
+        height: 32rem;
+    }
+        /* !  --__--__ jewelry Section End __---__--__--*/
+
+}
+
+
+
+
+@media screen and (max-width: 580px){
+
+    .body_container .jewelry .review_card{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+
+    .body_container .jewelry .review_card img{
+        width: 30%;
+        height: auto;
+        /* height: 100%; */
+        float: left;
+    }
+    .body_container .jewelry .review_card .title_link{
+        width: 70%;
+        float: right;
+        padding: 0 0 0 1rem;
+        font-size: 1.7rem;
+        display: block;
+    }
+
+    .body_container .jewelry .review_card > div .star_sec{
+        clear: both;
+        text-align: end;
+        margin:  0 3rem 1rem 0 ;
+    }
+
+}
+
+
+@media screen and (max-width: 450px){
+
+    /* !  --__--__ jewelry Section Start __---__--__--*/
+    .body_container .jewelry .review_card .title_link{
+        font-size: 1.6rem;
+    }
+    /* !  --__--__ jewelry Section End __---__--__--*/
+    .body_container .jewelry .m_jewelry_pic img{
+        height: 24rem;
     }
 }
