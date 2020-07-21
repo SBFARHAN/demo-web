@@ -767,7 +767,7 @@
     .body_container .jewelry .review_card > div .star_sec{
         clear: both;
         text-align: end;
-        margin:  0 3rem 1rem 0 ;
+        padding:  1rem 3rem 1rem 0 ;
     }
 
 }
