@@ -42,15 +42,22 @@ footer{
     text-transform: capitalize;
 }
 
-.follow_sec{
+footer .follow_sec{
     max-width: 30rem;
     /* background-color: mediumaquamarine; */
     padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .follow_sec h2{
+    margin: 0 0 1rem 0;
 }
 
 .social_icon{
     text-align: center;
-    margin: 3rem 0 2rem 0;
 }
 
 .social_icon a{
@@ -75,39 +82,66 @@ footer .all_footer .social_icon .f_icon{
     color: #ffffff;
 }
 
-.footer_description h2,
-.link_sec h2,
-.follow_sec h2{
-    font-size: 2.2rem;
+.link_sec h2{
+    font-size: 2rem;
     font-weight: 600;
     letter-spacing: 1px;
-    margin: 1.5rem 0;
+    margin: 0.5rem 0;
     text-align: center;
     text-transform: uppercase;
 }
 
-.footer_description p,
-.follow_sec p{
-    color: #c5c5c5;
-    font-size: 1.6rem;
-    font-weight: 400;
-    /* text-align: justify; */
-    text-transform: capitalize;
-    margin: 2rem 0 0 0;
+.follow_sec h2{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.copyright{
-    width: 100%;
-    height: 5rem;
+.footer_description{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #484848;
+}
+.footer_description p{
+    color: #c5c5c5;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 1.5rem 0 0 0;
 }
 
+footer .copyright{
+    width: 100%;
+    height: 5rem;
+    border-top: 1px solid #484848;
+}
+footer .copyright .copyright_container{
+    max-width: 1050px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
 .copyright p{
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 1.4rem;
+    margin: 0 0 0 2rem;
+}
+
+footer .copyright .three_condition{
+    margin: 0 6rem 0 0;
+    /* background-color: red; */
+}
+
+footer .copyright .three_condition a{
+    color: #c5c5c5;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin: 0 1rem 0 0 ;
 }
 
 .ft_years{
@@ -119,8 +153,12 @@ footer .all_footer .social_icon .f_icon{
     .all_footer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 18rem 25rem 21rem;
+        grid-template-rows: 9rem 22rem 9rem;
         
+    }
+
+    footer .follow_sec h2{
+        margin: 0;
     }
 
     footer .all_footer > div{
@@ -129,5 +167,20 @@ footer .all_footer .social_icon .f_icon{
     }
     footer .all_footer .follow_sec .social_icon{
         margin: 1rem 0 1rem 0;
+    }
+
+    footer .copyright .copyright_container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    footer .copyright .three_condition{
+        margin: 0;
+    }
+    footer .copyright .three_condition a:last-child{
+        margin: 0;
+    }
+    .copyright p{
+        margin: 0;
+        padding: 0 0 0.4rem 0;
     }
 }

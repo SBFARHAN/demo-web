@@ -281,7 +281,7 @@
     width: 100%;
     height: 32rem;
 }
-.pets_section .pets_container ,.highlight_card .title_link{
+.pets_section .pets_container .highlight_card .title_link{
     color: #000000;
     text-decoration: none;
     font-size: 2rem;
@@ -597,90 +597,146 @@
 
 
 /* !  --__--__ jewelry Section Start __---__--__--*/
-.body_container .jewelry .jewelry_title{
-    width: 100%;
-    border-top: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
-    margin: 0  0 2rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.body_container .jewelry .jewelry_title .jl_con{
-    color: #1195dd;
-    font-size: 1.8rem;
-    margin: 0 1rem 0 0;
-}
-.body_container .jewelry .m_jewelry_pic img{
-    width: 100%;
-    height: 55rem;
-    position: relative;
-    display: block;
-}
-.body_container .jewelry .m_jewelry_pic .img_title{
-    position: absolute;
-    left: 0;
-    bottom: 0rem;
+.jewelry .jewelry_container{
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem 1rem;
-    background-color: #00000082;
+    margin: 0 0 2rem 0;
 }
-.body_container .jewelry .m_jewelry_pic .img_title h2{
-    font-size: 2rem;
-    font-weight: 600;
-    color: #ececec;
+.jewelry .jewelry_container .section_bar{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin: 2rem 0 2rem 0;
 }
-.body_container .jewelry .jewelry_title h2{
-    font-size: 1.8rem;
+.jewelry .jewelry_container .section_bar .section_div{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0.7rem 0;
+}
+.jewelry .jewelry_container .section_bar .section_div .fa-gem{
+    color: #1195dd;
+}
+.jewelry .jewelry_container .section_bar .section_div span{
     text-transform: uppercase;
     font-weight: 600;
-    padding: 1rem 0 1rem 0;
-    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 0 0.5rem;
 }
-.body_container .jewelry .m_jewelry_pic{
-    position: relative;
+.jewelry .jewelry_container .highlight_card{
     margin: 0 2rem 2rem 2rem;
+    position: relative;
 }
-.body_container .jewelry .review_card{
+.jewelry .jewelry_container .highlight_card .img_link{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+.jewelry .jewelry_container .highlight_card a img{
+    width: 100%;
+    height: 50rem;
+    display: block;
+}
+.jewelry .jewelry_container .highlight_card .star{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.jewelry .jewelry_container .highlight_card .little_title{
+    padding: 0.5rem;
+    background-color: #10608f;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #ececec;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.jewelry .jewelry_container .highlight_card .title_link{
+    width: 100%;
+    height: auto;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+    background-color: #dddddd;
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+}
+.jewelry .jewelry_container .highlight_card .title_pera{
+    color: #1d1d1d;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0.2rem 0 0 0;
+}
+.jewelry .jewelry_container .small_product{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 2rem;
-    padding: 0 2rem;
-    margin:  0 0 2rem 0;
+    margin: 0 2rem;
 }
-.body_container .jewelry .review_card .pera_link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #1d1d1d;
+.jewelry .jewelry_container .small_product div{
+    position: relative;
 }
-.body_container .jewelry .review_card img{
+.jewelry .jewelry_container .small_product div .img_link{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+.jewelry .jewelry_container .small_product div a img{
     width: 100%;
     height: 22rem;
+    display: block;
+    margin: 0 0 1rem 0;
 }
-.body_container .jewelry .review_card .title_link{
-    text-decoration: none;
-    color: #000000;
-    font-size: 2rem;
+.jewelry .jewelry_container .small_product div .star{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.jewelry .jewelry_container .small_product div .little_title{
+    padding: 0.5rem;
+    background-color: #10608f;
     text-transform: capitalize;
-    font-weight: 600;
-    width: 100%;
-    display: inline-block;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #ececec;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
-.body_container .jewelry .review_card div:hover .title_link{
+.jewelry .jewelry_container .small_product div .title_link{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+.jewelry .jewelry_container .small_product div .description{
+    color: #1d1d1d;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0.2rem 0 0 0;
+}
+.jewelry .jewelry_container .small_product div:hover .title_link{
     color: #10608f;
 }
-.body_container .jewelry .review_card .fullSar{
-    color: #FACA67;
+.jewelry .jewelry_container .highlight_card:hover .title_link{
+    color: #10608f;
 }
-.body_container .jewelry .review_card .halfSar{
-    color: #FACA67;
+.body_container .jewelry .jewelry_container .zmdi{
+    color: #ffb723;
+    font-size: 1.4rem;
 }
-.body_container .jewelry .review_card .noneStar{
+.body_container .jewelry .jewelry_container .halfSar{
+    color: #ffb723;
+}
+.body_container .jewelry .jewelry_container .noneStar{
     color: #adadad;
 }
 /* !  --__--__ jewelry Section End __---__--__--*/
@@ -699,88 +755,48 @@
 
 
 /* !------- Media Screen Responsive Style */
-@media screen and (max-width: 880px){
-
-    
+@media screen and (max-width: 720px){
+    .jewelry .jewelry_container .highlight_card a img{
+        height: 28rem;
+    }
+}
+@media screen and (max-width: 860px){
     /* !  --__--__ jewelry Section Start __---__--__--*/
-    .body_container .jewelry .review_card{
+    .jewelry .jewelry_container .small_product{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
-    }
-    .body_container .jewelry .m_jewelry_pic img{
-        height: 40rem;
-    }
-    .body_container .jewelry .m_jewelry_pic .img_title h2{
-        font-size: 1.6rem;
-    }
-    .body_container .jewelry .m_jewelry_pic .img_title{
-        padding: 1rem 1rem;
     }
     /* !  --__--__ jewelry Section End __---__--__--*/
-
-
 }
 
-
-
-
-
-
-@media screen and (max-width: 630px){
-
-     /* !  --__--__ jewelry Section Start __---__--__--*/
-    .body_container .jewelry .review_card{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .body_container .jewelry .m_jewelry_pic img{
-        height: 32rem;
-    }
-        /* !  --__--__ jewelry Section End __---__--__--*/
-
-}
-
-
-
-
-@media screen and (max-width: 580px){
-
-    .body_container .jewelry .review_card{
+@media screen and (max-width: 545px){    
+    /* !  --__--__ jewelry Section Start __---__--__--*/
+    .jewelry .jewelry_container .small_product{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(9, 1fr);
+        justify-content: center;
     }
-
-    .body_container .jewelry .review_card img{
-        width: 30%;
-        height: auto;
-        /* height: 100%; */
-        float: left;
+    .jewelry .jewelry_container .highlight_card a img{
+        height: 18rem;
     }
-    .body_container .jewelry .review_card .title_link{
-        width: 70%;
-        float: right;
-        padding: 0 0 0 1rem;
-        font-size: 1.7rem;
-        display: block;
-    }
-
-    .body_container .jewelry .review_card > div .star_sec{
-        clear: both;
-        text-align: end;
-        margin:  0 3rem 1rem 0 ;
-    }
-
-}
-
-
-@media screen and (max-width: 450px){
-
-    /* !  --__--__ jewelry Section Start __---__--__--*/
-    .body_container .jewelry .review_card .title_link{
+    .jewelry .jewelry_container .highlight_card .title_link{
         font-size: 1.6rem;
     }
-    /* !  --__--__ jewelry Section End __---__--__--*/
-    .body_container .jewelry .m_jewelry_pic img{
-        height: 24rem;
+    .jewelry .jewelry_container .small_product div .title_link{
+        font-size: 1.6rem;
     }
+    .jewelry .jewelry_container .small_product div .description{
+        font-size: 1.4rem;
+    }
+    .jewelry .jewelry_container .small_product div a img{
+        width: 100%;
+        height: 18rem;
+        margin: 0 auto;
+    }
+    /* !  --__--__ jewelry Section End __---__--__--*/
+
 }
+
+
+
+
