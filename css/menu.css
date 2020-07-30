@@ -72,9 +72,80 @@
     width: 100%;
     transition: width 0.5s ease;
 }
+.header .nav .nav_container .menu_icon{
+    display: none;
+}
 .header .nav .nav_container .menu_icon .menu_bar{
     color: #efefef;
     font-size: 2rem;
     cursor: pointer;
-    display: none;
+    /* display: none; */
+}
+
+/* !  ---____---  Media Query Screen  --- ____ -----*/
+
+@media screen and (max-width: 640px){
+    .main_section {
+        width: 100%;
+        height: 52rem;
+        background: linear-gradient(rgba(19, 214, 185, 0.8),rgba(19, 214, 185, 0.8)), url(../picture/bg-small.png);
+        background-size: cover;
+    }    
+    .header{
+        position: relative;
+    }
+    .header .nav .nav_container .menu_icon{
+        display: block;
+    }
+    .header .nav .nav_container .menu_div{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -20rem;
+        right: 0;
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+    .header .nav .nav_container .menu_div.active_div{
+        opacity: 1;
+        top: 6rem;
+    }
+    .header .nav .ul_list{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        background-color: #21e8ca;
+        /* border-top: 1px solid #dddddd; */
+    }
+    .header .nav .ul_list li{
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header .nav .ul_list li .active_menu{
+        background-color: #00d8b7;
+    }
+    .header .nav .ul_list li a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-align: center;
+        line-height: 4rem;
+        padding: 0;
+    }
+    .header .nav .ul_list li .active_menu::after{
+        display: none;
+    }
+    .header .nav .nav_container{
+        justify-content: space-between;
+        background-color: #21e8ca;
+    }
+    .header .nav .nav_container .logo_div{
+        margin:  0 0 0 2.5rem;
+    }
+    .header .nav .nav_container .menu_icon{
+        margin: 0 1.5rem 0 0;
+    }
 }

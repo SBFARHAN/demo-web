@@ -11,6 +11,10 @@ html{
 body{
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+    /* overflow: hidden; */
+}
+main{
+    /* overflow: hidden; */
 }
 /* !  Global  Style */
 
@@ -72,7 +76,6 @@ body{
     transition: all 0.5s ease;
 }
 .main_section .main_container .title_part .btn_div a:hover{
-    
     background-color: #ffffff;
     color: #21e8ca;
 }
@@ -477,7 +480,19 @@ footer .footer_container .description_section p{
 
 
 /* !------------- Main Section Part Start * ---------*/
-
+.main_section .main_container .title_part{
+    max-width: 32rem;
+}
+    .main_section .main_container{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    .main_section .main_container .img_part{
+        width: 100%;
+        height: auto;
+        margin: 1.4rem 0 0 0;
+    }
 /* !------------- Main Section Part End * ---------*/
 
 
@@ -563,4 +578,9 @@ footer .footer_container .description_section{
 }
 /* !------------- Footer Section Part End * ---------*/
 
+}
+@media screen and (max-width: 340px){
+    .main_section .main_container .title_part{
+        margin: 0 0 0 2rem;
+    }
 }
